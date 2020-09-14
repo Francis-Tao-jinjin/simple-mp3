@@ -1,0 +1,37 @@
+{
+  "name": "simple-mp3",
+  "version": "1.0.0",
+  "description": "a simple helper to encode audio file to mp3, hide all the complicated detail of lamejs",
+  "main": "build/simpleMp3.js",
+  "types": "build/type/index.d.ts",
+  "scripts": {
+    "build": "rm -rf build && mkdir build && browserify src/index.ts --s simpleMp3 -p [ tsify --project tsconfig.json ] -p [ tinyify --no-flat ] > ./build/simpleMp3.js",
+    "type:build": "tsc --project tsconfig.buildType.json",
+    "test": "budo -d docs ./test-lame.js:docs/bundle.js --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Francis-Tao-jinjin/simple-mp3.git"
+  },
+  "keywords": [
+    "lame",
+    "mp3"
+  ],
+  "author": "francis Tao jinjin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Francis-Tao-jinjin/simple-mp3/issues"
+  },
+  "homepage": "https://github.com/Francis-Tao-jinjin/simple-mp3#readme",
+  "devDependencies": {
+    "@types/node": "^8.10.38",
+    "browserify": "^16.5.2",
+    "budo": "^11.6.0",
+    "tinyify": "^3.0.0",
+    "ts-node": "^7.0.1",
+    "tsify": "^4.0.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.4",
+    "typescript-tslint-plugin": "^0.1.0"
+  }
+}
