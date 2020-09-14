@@ -33,7 +33,7 @@ the Bit-Rate of the mp3 file. default value is 192.
 
 ## usage
 ```javascript
-const { simpleMp3 } = require('simpleMp3');
+const { simpleMp3 } = require('simple-mp3');
 
 ...
 ...

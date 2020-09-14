@@ -1,6 +1,6 @@
 {
   "name": "simple-mp3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a simple helper to encode audio file to mp3, hide all the complicated detail of lamejs",
   "main": "build/simpleMp3.js",
   "types": "build/type/index.d.ts",
